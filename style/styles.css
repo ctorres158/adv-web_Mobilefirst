@@ -1,9 +1,633 @@
 /* This will effect everything from 0 to 576px */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+*{
+    box-sizing: border-box;
+}
+body{
+    font: 1rem/1.5rem 'Open Sans', sans-serif;
+    margin:0; 
+  
+}
+.container{
+    width: 95%;
+  margin:0; 
+}
+/*----------------------Phone and Tablet Menu-------------*/ 
+.hamburger {
+    position: absolute;
+    top: 5em;
+    right: 5%;
+    margin-top: -45px;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
+  }
+  
+  .hamburger div {
+    width: 3em;
+    height: 7px;
+    border-radius: 3px;
+    background-color: #575757;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+ /*----------------------End-------------*/  
+.flex{
+    display: flex;
+    flex-wrap:wrap; 
+}
+.space-between{
+    align-content: space-between;
+}
+/*----------------------Hero-------------*/ 
+#hero{
+    background:url(../image/hero.jpg) no-repeat;
+    background-size: cover;
+    height: 25rem; 
+}
+
+h1 , h2{
+    font-family:'Oswald', sans-serif; 
+    font-weight: 200;
+}
+
+#hero .black-background{
+    width: 20rem; 
+    background:rgba(0,0,0,.9); 
+    height: 25rem; 
+}
+
+#hero h1, #hero h2{
+    text-align: right;
+    color:#fff; 
+    margin:1rem; 
+
+}
+#hero h1{
+    font-size:2.6rem; 
+    line-height:3rem; 
+    text-transform:uppercase;
+    padding-top:1rem; 
+}
+#hero h2{
+    font-size:1rem; 
+    line-height:2.5rem; 
+    text-transform: uppercase;
+}
+#hero sup{
+    padding-top:1rem; 
+
+    font-size:3rem; 
+}
+#hero a, #hero a:visited{
+    color:#fff; 
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding:6%; 
+    margin-left:6rem; 
+    font-size:.8rem; 
+    text-transform: uppercase;
+
+}
+ /*----------------------End-------------*/  
+
+ /*----------------------ICONS-------------*/ 
+
+.col-2{
+   display: flex; 
+   flex-wrap: nowrap;
+   justify-content: center;
+   gap:5%; 
+    margin:2rem 1rem;
+    
+    text-align: center; 
+}
+
+.icon h3{
+    text-transform: uppercase;
+    color:#575757;
+    font-family:'Oswald', sans-serif; 
+   
+}
+
+.box{
+    margin-top: 1.5rem;
+}
+.icon span{
+    text-decoration: underline;
+}
+ /*----------------------End-------------*/ 
+
+  /*----------------------Hero2-------------*/ 
+#hero2{
+    background:url(../image/pizza_ad.jpg) no-repeat;
+    background-size: cover;
+    height: 35rem;
+     
+
+}
+
+#hero2 h1, #hero2 h2{
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff; 
+    font-size: 4rem; 
+    padding-left: 40%;
+}
+
+#hero2 h1{
+    line-height: 5rem;
+    padding-top: 6%;
+}
+
+#hero2 h2{
+    font-weight:700; 
+}
+
+  /*----------------------End-------------*/ 
+
+  /*----------------------Google Map-------------*/ 
+.location{
+    border: 1px solid #d7e4d7; 
+    background-color:#d7e4d7; 
+    width:44.5rem; 
+    margin:0; 
+    }
+
+.location h3{
+    text-align: center;
+    text-transform: uppercase;
+    color:#575757;
+    font-family:'Oswald', sans-serif; 
+    font-weight:200; 
+    font-size:5.18rem
+
+}
+
+  /*----------------------End-------------*/ 
+
+/*----------------------Footer-------------*/ 
+
+footer{
+    border: 2px solid #000;
+    height: 45rem; 
+    background-color:#000; 
+}
+footer h3{
+    color:#575757; 
+    text-align: center;
+    text-transform:uppercase; 
+    font-size:5.18rem;
+    font-weight:200;
+    font-family:'Oswald', sans-serif; 
+}
+footer h4{
+    color:#575757; 
+    text-align: center;
+    text-transform:uppercase; 
+    font-size:1.6rem;
+    font-weight:500;
+    font-family:'Open Sans', sans-serif; 
+}
+
+.underline{
+    text-decoration: underline;
+}
+.foot-box{
+line-height: 3rem; 
+margin-left:5rem; 
+    color:#575757; 
+    text-align: center;
+    font-size:1.5rem; 
+}
+
+.line{
+    border-bottom: 2px solid #575757;
+    width:60%; 
+    margin-left:8rem;
+    margin-top:3rem;
+}
+
+.mail{
+    font-size:2.3408rem;
+}
+label{
+ margin-left:5rem; 
+}
+#email{
+    padding:.7rem 8rem; 
+}
+input[type=submit]{
+    background:#575757;
+    padding: .5rem .8rem; 
+    margin-left:.5rem; 
+    color:#fff; 
+    font: 1rem/1.5rem 'Open Sans', sans-serif;
+
+}
+
+/*----------------------End-------------*/ 
 
 
 /* Media Queries */
-@media (min-width: 576px) /* for mobile */{}
-@media (min-width:768px) /* for tablets */{}
-@media (min-width: 992px) /* for laptops */{}
-@media (min-width: 1200px) /* for large devices */{}
+@media (min-width: 576px) /* for mobile */{
+ .hamburger {
+        position: absolute;
+        top: 5em;
+        left: 38rem;
+        margin-top: -45px;
+        width: 1em;
+        height: 45px;
+        z-index: 10;
+      }
+      .main{
+          display:none; 
+      }
+      .socialM{
+        display:none;  
+        
+    }
+
+    .logo{
+        padding-left:1rem; 
+    
+    }
+    #hero{
+        background:url(../image/hero.jpg) no-repeat;
+        background-size: cover;
+        height: 25rem; 
+        width:45rem;
+    }
+    .col-2{
+        width:42rem;
+    }
+    .icon:nth-child(3){
+        display:none; 
+    }
+
+     #hero2{
+         width:45rem; 
+        background:url(../image/pizza_ad.jpg) no-repeat;
+        background-size: cover;
+        height: 35rem;
+         
+    
+    }
+    .map{
+      padding-left:1.5%; 
+    }
+    .location{
+        border: 2px solid #d7e4d7; 
+        background-color:#d7e4d7; 
+        width:45rem;
+
+        }
+    
+    .location h3{
+        text-align: center;
+        text-transform: uppercase;
+        color:#575757;
+        font-family:'Oswald', sans-serif; 
+        font-weight:200; 
+        font-size:5.18rem;
+    
+    }
+    #gallery img{
+        display: none;  
+       
+        }
+footer{
+    border: 2px solid #000;
+    height: 45rem; 
+    background-color:#000; 
+    width:45rem; 
+}
+label{
+    margin-left:7rem; 
+   }
+   .foot-box2{
+    display:none; 
+}
+.right { 
+    display:none;
+}
+.left{
+    display:none; 
+
+}
+.text-left{
+    display:none;
+   
+
+}
+
+
+}
+@media (min-width:768px) /* for tablets */{
+    .hamburger {
+        left: 41rem;
+      }
+      .main{
+          display:none; 
+      }
+      .socialM{
+        display:none;  
+        
+    }
+    #hero{
+        width:48rem;
+    }
+    .col-2{
+        width:45rem;
+    }
+    .icon:nth-child(3){
+        display:block; 
+    }
+    #hero2{
+        width:48rem;
+    }
+    #hero2 h1, #hero2 h2{
+        margin-left: 5rem;  
+    }
+    .location{
+        display:none; 
+
+        }
+        .map{
+            display:none;
+            padding-left:5%; 
+        }
+    
+        #gallery {
+            flex-wrap: wrap;
+    justify-content: flex-start; 
+    padding-top: 5%; 
+    padding-bottom: 5%; 
+    padding-left:2rem; 
+   
+        }
+    
+        #gallery img{
+        display: block;
+        width:25%  
+       
+        }
+footer{
+    width:48rem;
+}
+footer h3, footer h4{
+    margin-left:2rem;   
+
+}
+.foot-box{
+    margin-left:7rem; 
+
+}
+label{
+    margin-left:9rem; 
+   }
+   .foot-box2{
+    display:none; 
+}
+.right { 
+    display:none;
+}
+.left{
+    display:none; 
+
+}
+.text-left{
+    display:none;
+   
+
+}
+}
+@media (min-width: 992px) /* for laptops */{
+    .hamburger {
+        display:none; 
+      }
+
+/*----------------------Nav Desktop-------------*/ 
+      .main{
+        list-style: none;
+        display:flex;
+     gap:2rem; 
+     padding-top:3.5rem; 
+     padding-left:3rem; 
+     font: .8rem/1rem 'Open Sans', sans-serif;
+     text-transform: uppercase;
+     color:#575757;
+     font-weight: 500; 
+
+}
+
+.socialM{
+    display:block; 
+    padding-top:3.8rem;
+    padding-left:3rem; 
+    
+}
+
+.logo{
+    padding-left:1rem; 
+
+}
+/*----------------------End-------------*/ 
+
+      #hero{
+        width:65rem;
+    }
+    #hero2{
+        display:none; 
+    }
+    .col-2{
+        padding-top:5%; 
+        width:58rem;
+    }
+    .icon:nth-child(3){
+        display:block; 
+    }
+    .location{
+        display:none;
+
+        }
+        .map img{
+            display:none;
+
+        }
+
+/*----------------------Gallery-------------*/ 
+           #gallery {
+        flex-wrap: wrap;
+justify-content: flex-start; 
+padding-top: 5%; 
+padding-bottom: 5%; 
+padding-left:5%;  
+    }
+
+    #gallery img{
+    display: block;
+    width:25%  
+   
+    }
+/*----------------------End-------------*/ 
+    footer{
+            width:65rem;
+            height:30rem; 
+         
+        }
+        footer h3, footer h4{
+            display:none; 
+        }
+        .foot-box{
+            display:none; 
+        }
+        #email{
+            position:absolute; 
+           margin-top:5rem; 
+           margin-left:1rem; 
+
+        }
+        input[type=submit]{
+            position:absolute; 
+         margin-left:27rem; 
+         margin-top:5rem; 
+        
+        }
+        .mail{
+            display:block;
+            position:absolute;  
+        }
+        label{
+            display:none; 
+}
+/*----------------------Desktop Footer-------------*/ 
+        .foot-box2{
+            display:block; 
+            color:#575757; 
+        }
+        .right { 
+            text-align:center; 
+            margin-left:37rem;
+            display:block; 
+            margin-left:37rem; 
+            font-size:1rem
+        }
+        .left{
+            display:block; 
+            margin-left:37rem; 
+            font-size:2rem; 
+
+        }
+        .text-left{
+            display:block; 
+            margin-left:37rem; 
+            font-size:1rem; 
+           
+
+        }
+        .line{
+            display:none;
+        }
+
+        .right span{
+            display:block;
+            text-align:center; 
+        }
+        /*----------------------End-------------*/ 
+
+}
+
+@media (min-width: 1200px) /* for large devices */{
+    .hamburger {
+        display:none; 
+      }
+      .main{
+        list-style: none;
+        display:flex;
+     gap:2.5rem; 
+     padding-top:3.5rem;  
+     padding-left:6rem; 
+     font: .8rem/1rem 'Open Sans', sans-serif;
+     text-transform: uppercase;
+     color:#575757;
+     font-weight: 500;
+
+}
+.socialM{
+    display:block; 
+    padding-top:3.8rem;
+    padding-left:6rem; 
+    
+}
+.logo{
+    padding-left:1rem; 
+
+}
+
+
+      #hero{
+        width:75rem;
+    }
+    #hero .black-background{
+        width: 30rem; 
+        background:rgba(0,0,0,.9); 
+        height: 25rem; 
+    }
+    #hero h1{
+        padding-top:2rem;
+        font-size:3rem;  
+    }
+    #hero h2{
+        font-size:1rem;
+
+    }
+
+    #hero h1, #hero h2{
+     margin-right:5rem;
+  
+    }
+    #hero a, #hero a:visited{
+        padding:3%; 
+        margin-left:15rem; 
+        font-size:1rem; 
+    
+    }
+    #hero2{
+        display:none; 
+    }
+    .col-2{
+        padding-top:5%; 
+        width:70rem;
+    }
+    .icon:nth-child(3){
+        display:block; 
+    }
+    .location{
+        display:none;
+
+        }
+        .map img{
+            display:none;
+
+        }
+           #gallery {
+        flex-wrap: wrap;
+justify-content: flex-start; 
+padding-top: 5%; 
+padding-bottom: 5%; 
+padding-right:5%;  
+    }
+
+    #gallery img{
+    display: block;
+    width:25%  
+   
+    }
+    footer{
+        width:75rem;
+     
+    }
+
+} 
